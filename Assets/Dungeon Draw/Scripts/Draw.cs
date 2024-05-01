@@ -14,8 +14,8 @@ public class Draw : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        pileSize = PlayerStats.DeckSize - Hand.drawAmount;
-        Debug.Log(PlayerStats.DeckSize);
+        pileSize = PlayerStats.TotalDeckSize - Hand.drawAmount;
+        Debug.Log(PlayerStats.TotalDeckSize);
         sizeText.text = pileSize.ToString();
     }
 
